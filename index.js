@@ -58,7 +58,6 @@ divHead.appendChild(h1);
 
 // Placement des éléments dans divHead
 
-document.body.appendChild(divHead);
 divHead.appendChild(homeLink);
 divHead.appendChild(productsLink);
 divHead.appendChild(searchBarInput);
@@ -72,6 +71,36 @@ carouselDiv.setAttribute(
   "height:30vh;background-color:salmon;width:50vw;margin: 30px auto"
 );
 
+// H2
+
+const h2 = document.createElement("h2");
+
+const PresentationText = document.createTextNode("Presentation");
+
+h2.setAttribute("style", "margin:0");
+
+h2.appendChild(legoShareText);
+
+// composants card
+//// image
+const imageCard = document.createElement("img");
+imageCard.setAttribute("src", "./img/15038-13875-14202.jpg");
+imageCard.setAttribute("alt", "Toutou");
+imageCard.setAttribute("style", "width:100%;height:50%");
+
+//// textName
+const textName = document.createElement("p");
+const JohnDoe = document.createTextNode("John Doe");
+
+//// textProduct
+
+const card = document.createElement("div");
+card.appendChild(textName);
+// Placement des éléments dans la card
+
 // Placement des éléments dans le body
 
+document.body.appendChild(divHead);
 document.body.appendChild(carouselDiv);
+document.body.appendChild(h2);
+document.body.appendChild(card);
