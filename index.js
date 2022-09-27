@@ -1,106 +1,20 @@
-document.body.setAttribute(
-  "style",
-  "margin:0;display:flex;flex-direction:column;justify-content:space-between"
-);
+import { HomeComponent } from "./home.js";
+import { ProductsComponent } from "./products.js";
+import { divHead } from "./navbar.js";
 
-// H1
-
-const h1 = document.createElement("h1");
-
-const legoShareText = document.createTextNode("Lego Share");
-
-h1.setAttribute("style", "margin:0");
-
-h1.appendChild(legoShareText);
-
-// Link Home
-
-const homeLink = document.createElement("a");
-homeLink.setAttribute("href", "http://");
-homeLink.setAttribute("style", "text-decoration:none;color:black");
-const homeLinkText = document.createTextNode("Home");
-
-homeLink.appendChild(homeLinkText);
-
-// Link Products
-
-const productsLink = document.createElement("a");
-productsLink.setAttribute("href", "http://");
-productsLink.setAttribute("style", "text-decoration:none;color:black");
-const productsLinkText = document.createTextNode("Products");
-
-productsLink.appendChild(productsLinkText);
-
-// Link Login
-
-const loginLink = document.createElement("a");
-loginLink.setAttribute("href", "http://");
-loginLink.setAttribute("style", "text-decoration:none;color:black");
-const loginLinkText = document.createTextNode("Login");
-
-loginLink.appendChild(loginLinkText);
-
-// input search
-
-const searchBarInput = document.createElement("input");
-searchBarInput.setAttribute("placeholder", "Rechercher ...");
-
-// div navbar
-
-const divHead = document.createElement("div");
-
-divHead.setAttribute(
-  "style",
-  "height:10vh; background-color:gray;width:100%;padding:0;display:flex;justify-content:space-around;align-items:center"
-);
-
-divHead.appendChild(h1);
-
-// Placement des éléments dans divHead
-
-divHead.appendChild(homeLink);
-divHead.appendChild(productsLink);
-divHead.appendChild(searchBarInput);
-divHead.appendChild(loginLink);
-
-// Carousel div
-
-const carouselDiv = document.createElement("div");
-carouselDiv.setAttribute(
-  "style",
-  "height:30vh;background-color:salmon;width:50vw;margin: 30px auto"
-);
-
-// H2
-
-const h2 = document.createElement("h2");
-
-const PresentationText = document.createTextNode("Presentation");
-
-h2.setAttribute("style", "margin:0");
-
-h2.appendChild(legoShareText);
-
-// composants card
-//// image
-const imageCard = document.createElement("img");
-imageCard.setAttribute("src", "./img/15038-13875-14202.jpg");
-imageCard.setAttribute("alt", "Toutou");
-imageCard.setAttribute("style", "width:100%;height:50%");
-
-//// textName
-const textName = document.createElement("p");
-const JohnDoe = document.createTextNode("John Doe");
-
-//// textProduct
-
-const card = document.createElement("div");
-card.appendChild(textName);
-// Placement des éléments dans la card
-
-// Placement des éléments dans le body
-
+const container = document.createElement("div");
 document.body.appendChild(divHead);
-document.body.appendChild(carouselDiv);
-document.body.appendChild(h2);
-document.body.appendChild(card);
+container.appendChild(HomeComponent);
+document.body.appendChild(container);
+
+const router = {
+  Home: HomeComponent,
+  Products: ProductsComponent,
+};
+
+document.querySelectorAll("a").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    container.replaceChildren();
+    container.appendChild(router[event.target.id]);
+  });
+});
