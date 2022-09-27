@@ -1,6 +1,8 @@
 // START NAVBAR //
 
 export const divHead = document.createElement("div");
+
+import { linkElementFunction } from "./functions.js";
 // H1
 
 const h1 = document.createElement("h1");
@@ -14,32 +16,35 @@ h1.appendChild(legoShareText);
 // Link Home
 
 const homeLink = document.createElement("a");
-// homeLink.setAttribute("href", "http://");
 homeLink.setAttribute("style", "text-decoration:none;color:black");
 const homeLinkText = document.createTextNode("Home");
 homeLink.setAttribute("id", "Home");
 
 homeLink.appendChild(homeLinkText);
+//Refacto :
+// linkElementFunction("text-decoration:none;color:black", "Home", "Home");
 
 // Link Products
 
 const productsLink = document.createElement("a");
-// productsLink.setAttribute("href", );
 productsLink.setAttribute("style", "text-decoration:none;color:black");
 const productsLinkText = document.createTextNode("Products");
 productsLink.setAttribute("id", "Products");
 
 productsLink.appendChild(productsLinkText);
+// Refacto :
+// linkElementFunction("text-decoration:none;color:black", "Products", "Products");
 
 // Link Login
 
 const loginLink = document.createElement("a");
-// loginLink.setAttribute("href", "http://");
 loginLink.setAttribute("style", "text-decoration:none;color:black");
 const loginLinkText = document.createTextNode("Login");
 loginLink.setAttribute("id", "Login");
 
 loginLink.appendChild(loginLinkText);
+// Refacto :
+// linkElementFunction("text-decoration:none;color:black", "Login", "Login");
 
 // input search
 

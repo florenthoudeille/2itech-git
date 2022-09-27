@@ -1,6 +1,8 @@
-// imports :
-
 export const HomeComponent = document.createElement("div");
+
+// imports functions :
+
+import { textElementFunction, imgElementFunction } from "./functions.js";
 
 // body :
 
@@ -28,39 +30,52 @@ const h2 = document.createElement("h2");
 const PresentationText = document.createTextNode("Presentation");
 
 h2.setAttribute("style", "margin:0");
-
-// h2.appendChild(legoShareText);
+h2.appendChild(PresentationText);
 
 // composants card
-//// image
+// image
 const imageCard = document.createElement("img");
 imageCard.setAttribute("src", "./img/15038-13875-14202.jpg");
 imageCard.setAttribute("alt", "Toutou");
 imageCard.setAttribute("style", "width:10%;height:auto");
+// Refacto
+imgElementFunction(
+  "./img/15038-13875-14202.jpg",
+  "Toutou",
+  "width:10%;height:auto"
+);
 
-//// textName
+// textName
 const textName = document.createElement("p");
 const JohnDoe = document.createTextNode("John Doe");
 textName.appendChild(JohnDoe);
+// Refacto
+// textElementFunction("John Doe");
 
-//// productName
+// productName
 const productName = document.createElement("p");
 const nameOfProduct = document.createTextNode("Nom du produit");
 productName.appendChild(nameOfProduct);
+// Refacto
+// textElementFunction("Nom du produit");
 
-//// Price
-
+// Price
 const priceP = document.createElement("p");
 const setPrice = document.createTextNode("400,00 €");
 priceP.appendChild(setPrice);
+// Refacto
+// textElementFunction("400,00 €");
 
-//// textProduct
-
+// textProduct
 const description = document.createElement("p");
 const descriptionText = document.createTextNode(
   "Cette collection date de 1989, très cher à mes yeux. J'ai pris grand soin de ce produit !"
 );
 description.appendChild(descriptionText);
+// Refacto
+// textElementFunction(
+//   "Cette collection date de 1989, très chère à mes yeux. J'ai pris grand soin de ce produit !"
+// );
 
 // Note
 
@@ -96,8 +111,6 @@ card.appendChild(divDescription);
 
 // Placement des éléments dans le body
 
-// HomeComponent.appendChild(divHead);
-// document.body.appendChild(ProductsComponent);
 divAccueil.appendChild(carouselDiv);
 divAccueil.appendChild(h2);
 divAccueil.appendChild(card);
