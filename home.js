@@ -1,6 +1,6 @@
 /* Header */
 let header = newElem('header','');
-document.querySelector('body').insertBefore(header, null);
+document.body.insertBefore(header, null);
 
 /* Nav */
 let nav = newElem('nav',{
@@ -21,11 +21,17 @@ let ul = newElem('ul',{
 nav.insertBefore(ul, null);
 
 /* li home */
-let liHome = newElem('li','','Home');
+let liHome = newElem('li',{
+  id: 'btnHome',
+  class: 'cursor-pointer'
+},'Home');
 ul.insertBefore(liHome, null);
 
 /* li Products */
-let liProducts = newElem('li','','Products');
+let liProducts = newElem('li',{
+  id: 'btnProducts',
+  class: 'cursor-pointer'
+},'Products');
 ul.insertBefore(liProducts, null);
 
 /* input search */
@@ -48,11 +54,15 @@ divLogin.insertBefore(btnLogin, null);
 
 
 
+
 /* main */
 let main = newElem('main',{
-  class: 'font-mono'
+  class: 'font-mono',
+  id: 'mainHome'
 });
-document.querySelector('body').insertBefore(main, null);
+document.body.insertBefore(main, null);
+
+
 
 /* sectionCarousel */
 let sectionCarousel = newElem('section',{
@@ -66,6 +76,8 @@ let imgCarousel = newElem('img',{
   src: './img/legoYellow.jpg'
 });
 sectionCarousel.insertBefore(imgCarousel, null);
+
+
 
 
 
@@ -205,7 +217,6 @@ let starOwner2 = newElem('i',{
 divOwner2.insertBefore(starOwner2, null);
 
 
-
 /* card3 */
 let card3 = newElem('div',{
   class: 'bg-sky-400 h-80 w-60 drop-shadow-lg'
@@ -268,10 +279,6 @@ divOwner3.insertBefore(starOwner3, null);
 
 
 
-
-
-
-
 /* Fonction pour créer des elements */
 function newElem(el, attribut, content = "") {
   const newElem = document.createElement(el);
@@ -282,3 +289,6 @@ function newElem(el, attribut, content = "") {
   }
   return newElem;
 }
+
+
+export const HomeComponent = main;
