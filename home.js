@@ -4,7 +4,7 @@ document.body.insertBefore(header, null);
 
 /* Nav */
 let nav = newElem('nav',{
-  class: 'flex justify-between items-center pl-10 h-20 bg-yellow-400 mb-10 font-mono font-bold'
+  class: 'flex justify-between items-center pl-10 h-20 bg-yellow-400 mb-10 font-["Reem Kufi Fun"] font-bold'
 });
 header.insertBefore(nav, null);
 
@@ -57,7 +57,7 @@ divLogin.insertBefore(btnLogin, null);
 
 /* main */
 let main = newElem('main',{
-  class: 'font-mono',
+  class: 'font-["Reem Kufi Fun"]',
   id: 'mainHome'
 });
 document.body.insertBefore(main, null);
@@ -171,7 +171,7 @@ sectionCards.insertBefore(divCards, null);
 
 /* card1 */
 let card1 = newElem('div',{
-  class: 'bg-sky-400 h-80 w-60 drop-shadow-lg'
+  class: 'bg-sky-100 h-80 w-60 drop-shadow-lg'
 });
 divCards.insertBefore(card1, null);
 
@@ -231,7 +231,7 @@ divOwner1.insertBefore(starOwner1, null);
 
 /* card2 */
 let card2 = newElem('div',{
-  class: 'bg-sky-400 h-80 w-60 drop-shadow-lg'
+  class: 'bg-sky-100 h-80 w-60 drop-shadow-lg'
 });
 divCards.insertBefore(card2, null);
 
@@ -291,7 +291,7 @@ divOwner2.insertBefore(starOwner2, null);
 
 /* card3 */
 let card3 = newElem('div',{
-  class: 'bg-sky-400 h-80 w-60 drop-shadow-lg'
+  class: 'bg-sky-100 h-80 w-60 drop-shadow-lg'
 });
 divCards.insertBefore(card3, null);
 
