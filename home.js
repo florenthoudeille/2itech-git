@@ -70,12 +70,84 @@ let sectionCarousel = newElem('section',{
 });
 main.insertBefore(sectionCarousel, null);
 
-/* imgCarousel */
-let imgCarousel = newElem('img',{
-  class: 'bg-slate-400 w-2/3 h-80 object-cover',
-  src: './img/legoYellow.jpg'
+/* divCarousel */
+let divCarousel = newElem('div',{
+  class: 'w-2/3 h-80 relative',
+  id: 'default-carousel',
+  'data-carousel': 'slide'
 });
-sectionCarousel.insertBefore(imgCarousel, null);
+sectionCarousel.insertBefore(divCarousel, null);
+
+/* carouselWrapper */
+let carouselWrapper = newElem('div',{
+  class: 'relative h-56 overflow-hidden md:h-96',
+});
+divCarousel.insertBefore(carouselWrapper, null);
+
+/* item1 */
+let item1 = newElem('div',{
+  class: 'duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20',
+  'data-carousel-item': ''
+});
+carouselWrapper.insertBefore(item1, null);
+
+/* spanItem1 */
+let spanItem1 = newElem('span',{
+  class: 'absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800',
+},'First Slide');
+item1.insertBefore(spanItem1, null);
+
+/* imgItem1 */
+let imgItem1 = newElem('img',{
+  class: 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2',
+  src: './img/legoMulti.jpg',
+  alt: 'lego multicolore'
+});
+item1.insertBefore(imgItem1, null);
+
+
+/* item2 */
+let item2 = newElem('div',{
+  class: 'duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20',
+  'data-carousel-item': ''
+});
+carouselWrapper.insertBefore(item2, null);
+
+/* spanItem2 */
+let spanItem2 = newElem('span',{
+  class: 'absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800',
+},'First Slide');
+item2.insertBefore(spanItem2, null);
+
+/* imgItem2 */
+let imgItem2 = newElem('img',{
+  class: 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2',
+  src: './img/legoYellow.jpg',
+  alt: 'lego jaune'
+});
+item2.insertBefore(imgItem2, null);
+
+
+/* item3 */
+let item3 = newElem('div',{
+  class: 'duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20',
+  'data-carousel-item': ''
+});
+carouselWrapper.insertBefore(item3, null);
+
+/* spanItem3 */
+let spanItem3 = newElem('span',{
+  class: 'absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800',
+},'First Slide');
+item3.insertBefore(spanItem3, null);
+
+/* imgItem3 */
+let imgItem3 = newElem('img',{
+  class: 'absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2',
+  src: './img/lego.jpg',
+  alt: 'lego'
+});
+item3.insertBefore(imgItem3, null);
 
 
 
@@ -106,7 +178,7 @@ divCards.insertBefore(card1, null);
 /* imgCard1 */
 let imgCard1 = newElem('img',{
   class: 'bg-slate-400 h-1/2 w-60',
-  src: './img/legoMulti.jpg'
+  src: './img/legoBatman.jpg'
 });
 card1.insertBefore(imgCard1, null);
 
@@ -166,7 +238,7 @@ divCards.insertBefore(card2, null);
 /* imgCard2 */
 let imgCard2 = newElem('img',{
   class: 'bg-slate-400 h-1/2 w-60',
-  src: './img/legoMulti.jpg'
+  src: './img/legoPoulet.jpg'
 });
 card2.insertBefore(imgCard2, null);
 
@@ -225,8 +297,8 @@ divCards.insertBefore(card3, null);
 
 /* imgCard3 */
 let imgCard3 = newElem('img',{
-  class: 'bg-slate-400 h-1/2 w-60',
-  src: './img/legoMulti.jpg'
+  class: 'bg-slate-400 h-1/2 w-60 object-cover',
+  src: './img/legoBike.jpg'
 });
 card3.insertBefore(imgCard3, null);
 
