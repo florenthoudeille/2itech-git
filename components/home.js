@@ -1,17 +1,17 @@
 import { CarouselComponent } from "./homeComponents/carousel.js";
 import { CardComponent } from "./homeComponents/cards.js";
 
-/* main */
-let main = newElem('main',{
-  class: 'font-["Reem Kufi Fun"]',
-  id: 'mainHome'
+/* divMain */
+let divMain = newElem('div',{
+  'data-main': 'home',
+  id: 'divMain',
 });
 
 /* sectionCarousel */
 let sectionCarousel = newElem('section',{
   class: 'flex justify-center'
 });
-main.insertBefore(sectionCarousel, null);
+divMain.insertBefore(sectionCarousel, null);
 
 /* divCarousel */
 let divCarousel = newElem('div',{
@@ -53,7 +53,7 @@ Object.values(CarouselComponent).forEach((item) => {
 
 /* sectionCards */
 let sectionCards = newElem('section','');
-main.insertBefore(sectionCards, null);
+divMain.insertBefore(sectionCards, null);
 
 /* h2 */
 let h2 = newElem('h2',{
@@ -130,4 +130,4 @@ function newElem(el, attribut, content = "") {
 }
 
 
-export const HomeComponent = main;
+export const HomeComponent = divMain;
