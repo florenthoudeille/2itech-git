@@ -1,16 +1,16 @@
 import { CardComponent } from "./homeComponents/cards.js";
 
-/* main */
-let main = newElem('main',{
-  class: 'font-["Reem Kufi Fun"]',
-  id: 'mainProducts'
+/* divMain */
+let divMain = newElem('div',{
+  'data-main': 'product',
+  id: 'divMain',
 });
 
 /* divProducts */
 let divProducts = newElem('div',{
   class: 'flex flex-wrap justify-evenly mx-40'
 },);
-main.insertBefore(divProducts, null);
+divMain.insertBefore(divProducts, null);
 
 for (let i = 0; i < 8; i++) {
   Object.values(CardComponent).forEach((item) => {
@@ -77,4 +77,4 @@ function newElem(el, attribut, content = "") {
   return newElem;
 }
 
-export const ProductsComponent = main;
+export const ProductsComponent = divMain;
