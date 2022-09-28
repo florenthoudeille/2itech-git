@@ -1,6 +1,6 @@
-import { NavComponent } from "./components/nav.js";
-import { HomeComponent } from "./components/home.js";
-import { ProductsComponent } from "./components/products.js";
+import { NavComponent } from "./components/navComponents/nav.js";
+import { HomeComponent } from "./components/homeComponents/home.js";
+import { ProductsComponent } from "./components/productComponents/products.js";
 
 document.body.appendChild(NavComponent);
 let main = document.createElement('main');

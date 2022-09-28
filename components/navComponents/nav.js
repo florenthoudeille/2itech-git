@@ -1,4 +1,4 @@
-import { MenuComponent } from "./navComponents/menu.js";
+import { MenuComponent } from "./menu.js";
 
 /* Header */
 let header = newElem('header','');
