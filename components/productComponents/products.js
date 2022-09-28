@@ -1,4 +1,4 @@
-import { CardComponent } from "./homeComponents/cards.js";
+import { CardComponent } from "../productComponents/cards.js";
 
 /* divMain */
 let divMain = newElem('div',{
@@ -12,7 +12,7 @@ let divProducts = newElem('div',{
 },);
 divMain.insertBefore(divProducts, null);
 
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 24; i++) {
   Object.values(CardComponent).forEach((item) => {
     let cards = document.createElement(item.name);
     cards.setAttribute('class', item.attribut.class);
