@@ -25,7 +25,7 @@ const cards = {
             attribut: {
                 class: 'text-lg pl-2 pt-2',
             },
-            text: 'Nom du Produit',
+            text: 'Lego Batman',
         },
         descProduit: {
             name: 'p',
@@ -88,7 +88,7 @@ const cards = {
             attribut: {
                 class: 'text-lg pl-2 pt-2',
             },
-            text: 'Nom du Produit',
+            text: 'Lego Homme Poulet',
         },
         descProduit: {
             name: 'p',
@@ -151,7 +151,7 @@ const cards = {
             attribut: {
                 class: 'text-lg pl-2 pt-2',
             },
-            text: 'Nom du Produit',
+            text: 'Lego en vélo',
         },
         descProduit: {
             name: 'p',

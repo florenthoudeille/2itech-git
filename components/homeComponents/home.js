@@ -1,5 +1,5 @@
-import { CarouselComponent } from "./homeComponents/carousel.js";
-import { CardComponent } from "./homeComponents/cards.js";
+import { CarouselComponent } from "./carousel.js";
+import { CardComponent } from "./cards.js";
 
 /* divMain */
 let divMain = newElem('div',{
