@@ -1,7 +1,11 @@
 module.exports = {
     content: ['./src/**/*.js',"./node_modules/flowbite/**/*.js"],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          'Reem': ['Reem Kufi Fun'],
+        }
+      },
     },
     variants: {
       extend: {},
