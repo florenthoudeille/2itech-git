@@ -5,7 +5,7 @@ let header = newElem('header','');
 
 /* Nav */
 let nav = newElem('nav',{
-  class: 'flex justify-between items-center pl-10 h-20 bg-yellow-400 mb-10 font-["Reem Kufi Fun"] font-bold'
+  class: 'flex justify-between items-center pl-10 h-20 bg-yellow-300 mb-10 font-["Reem Kufi Fun"] font-bold'
 });
 header.insertBefore(nav, null);
 
