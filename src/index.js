@@ -6,7 +6,7 @@ import { ProductsComponent } from "./components/productComponents/products.js";
 
 document.body.appendChild(NavComponent);
 let main = document.createElement('main');
-main.setAttribute('class', 'font-["Reem Kufi Fun"]');
+main.setAttribute('class', 'font-Reem');
 document.body.insertBefore(main, null)
 main.appendChild(HomeComponent);
 
