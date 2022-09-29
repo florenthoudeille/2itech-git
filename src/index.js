@@ -1,3 +1,5 @@
+import './style.css';
+import 'flowbite';
 import { NavComponent } from "./components/navComponents/nav.js";
 import { HomeComponent } from "./components/homeComponents/home.js";
 import { ProductsComponent } from "./components/productComponents/products.js";
