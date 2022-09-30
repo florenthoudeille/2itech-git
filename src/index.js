@@ -3,9 +3,10 @@ import { ProductsComponent } from "./components/productsComponent.js";
 import { divHead } from "./components/navbarComponent.js";
 import { LoginComponent } from "./components/loginComponent.js";
 
-const container = document.createElement("div");
+const container = document.createElement("section");
+
 document.body.appendChild(divHead);
-container.appendChild(HomeComponent);
+container.appendChild(ProductsComponent);
 document.body.appendChild(container);
 
 document.body.setAttribute(
@@ -14,9 +15,9 @@ document.body.setAttribute(
 );
 
 const router = {
-  Home: HomeComponent,
+  // Home: HomeComponent,
   Products: ProductsComponent,
-  Login: LoginComponent,
+  // Login: LoginComponent,
 };
 
 document.querySelectorAll("a").forEach((item) => {

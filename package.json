@@ -4,6 +4,8 @@
   "description": "Hello world ! A\r COucou\r B\r Hello world !\r C\r D",
   "private": true,
   "scripts": {
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +20,12 @@
   },
   "homepage": "https://github.com/florenthoudeille/2itech-git#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

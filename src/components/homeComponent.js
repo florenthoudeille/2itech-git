@@ -1,7 +1,8 @@
 export const HomeComponent = document.createElement("div");
 
 import { textElementFunction } from "../services/functions.js";
-import { cards } from "./src/models/cardModel.js";
+import { mapArray } from "../services/homeService.js";
+import { cards } from "../models/cardModel.js";
 
 // Accueil div
 
@@ -22,9 +23,6 @@ divExample.setAttribute(
   "style",
   "display:flex;width:50vw;justify-content:space-between;margin:auto"
 );
-// cards.forEach((el) => {
-//   return divExample.appendChild(el);
-// });
 divAccueil.appendChild(divExample);
 
 HomeComponent.appendChild(divAccueil);

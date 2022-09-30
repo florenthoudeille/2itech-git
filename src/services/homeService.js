@@ -1,3 +1,5 @@
-cards.forEach((el) => {
-  return divExample.appendChild(el);
-});
+export const mapArray = (array, divName) => {
+  array.forEach((el) => {
+    return divName.appendChild(el);
+  });
+};
