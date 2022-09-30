@@ -1,11 +1,146 @@
-export class Card {
-    constructor(img, name, desc, nameU, rate) {
-        this.imgProduct =  img;
-        this.nameProduct = name;
-        this.descProduct = desc;
-        this.nameUser = nameU;
-        this.rateUser = rate;
-    }
-}
+const data = {
+  cards: [
+    {
+      img: "./img/legoBatman.jpg",
+      name: "Lego Batman",
+      desc: "Lego Batman at beach",
+      nameUser: "BatFan",
+      rate: 4.5,
+    },
+    {
+      img: "./img/legoPoulet.jpg",
+      name: "Lego Chicken",
+      desc: "A lego of a man with a chicken costume",
+      nameUser: "Billy",
+      rate: 2,
+    },
+    {
+      img: "./img/legoBike.jpg",
+      name: "Lego Bike",
+      desc: "Lego on a bike",
+      nameUser: "Johnny Bolt",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+    {
+      img: "./img/legoMono.jpg",
+      name: "Lego Name",
+      desc: "Description",
+      nameUser: "John Doe",
+      rate: 3.5,
+    },
+  ],
+};
 
-const card1 = new Card("../dist/img/legoPoulet.jpg", "Lego Poulet", "Un homme lego deguisé en poulet", "Johnny Bolt", 5);
+export default data;
