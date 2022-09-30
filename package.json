@@ -1,0 +1,24 @@
+{
+  "name": "2itech-git",
+  "version": "1.0.0",
+  "description": "Hello world ! A COucou B Hello world ! C D",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florenthoudeille/2itech-git.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florenthoudeille/2itech-git/issues"
+  },
+  "homepage": "https://github.com/florenthoudeille/2itech-git#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
