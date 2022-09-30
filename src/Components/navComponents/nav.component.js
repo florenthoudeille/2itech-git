@@ -1,4 +1,4 @@
-import { MenuComponent } from "./menu.js";
+import { MenuComponent } from "./menu.component.js";
 
 /* Header */
 let header = newElem('header','');
@@ -58,5 +58,6 @@ function newElem(el, attribut, content = "") {
     }
     return newElem;
 }
+
 
 export const NavComponent = header;
