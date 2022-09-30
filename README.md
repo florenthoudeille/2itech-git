@@ -10,3 +10,8 @@ D
 ## Ssh
 
 the network of the school dont allow ssh protocols
+
+
+LCB
+
+LCB 2
